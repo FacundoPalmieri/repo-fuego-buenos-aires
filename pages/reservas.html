@@ -11,7 +11,8 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- css -->
-    <link rel="stylesheet" href="../css/style.css">
+    <!--link rel="stylesheet" href="../css/style.css"-->
+    <link rel="stylesheet" href="../css/estilos.css">
 
     <title>El fuego de Buenos Aires &#x1F525;</title>
 </head>
@@ -55,7 +56,47 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="main-reservas">
+        <h1>Resevá tu mesa</h1>
+        <div>
+            <form>
+                <div>
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre completo" required>
+                </div>
+                <div>
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico"
+                        required>
+                </div>
+                <div>
+                    <label for="phone" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Ingresa tu número de teléfono"
+                        required>
+                </div>
+                <div>
+                    <label for="date" class="form-label">Fecha de la Reserva</label>
+                    <input type="date" class="form-control" id="date" required>
+                </div>
+                <div>
+                    <label for="time" class="form-label">Hora</label>
+                    <input type="time" class="form-control" id="time" required>
+                </div>
+                <div>
+                    <label for="guests" class="form-label">Número de Personas</label>
+                    <input type="number" class="form-control" id="guests" placeholder="Ingresa el número de personas"
+                        required>
+                </div>
+                <div class="mensaje">
+                <label for="message" class="form-label ">Comentarios</label>
+                <textarea class="form-control" id="message" rows="3"
+                    placeholder="¿Algo más que debamos saber?"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100 ">Reservar</button>
+
+            </form>
+        </div>
 
     </main>
 
@@ -101,7 +142,8 @@
     <!--js Boostrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
-    
+        </script>
+
 </body>
+
 </html>

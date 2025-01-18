@@ -1,0 +1,741 @@
+@charset "UTF-8";
+/* Reset básico */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Hace que las dimensiones incluyan bordes y rellenos */
+}
+
+/* Fuente Tipográfica Externa */
+/*
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+*/
+body {
+  /*font-family: "Merienda", cursive;*/
+  font-family: "Playfair Display", serif;
+  background-color: black;
+}
+
+header .menu {
+  display: block;
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  background-color: #2c2c2c;
+}
+header .menu div a img {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Textos */
+.navbar-nav .nav-item .nav-link {
+  font-size: 17px;
+  color: white;
+  margin: 10px;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: #d1cbc0;
+  text-decoration: underline;
+}
+
+.btn-outline {
+  background-color: #2c2c2c;
+  color: white;
+  border: 2px solid white;
+  margin-right: 20px;
+}
+.btn-outline:hover {
+  background-color: white;
+  color: #2c2c2c;
+  border: 2px solid #002930;
+}
+.btn-outline:active {
+  color: white;
+  border: 2px solid #002930;
+}
+
+/* ---------------------------- INDEX ----------------------------  */
+/* Botón Reservar*/
+.hero {
+  display: flex;
+  width: 100%;
+  height: 550px;
+  background-image: url(../../img/hero.jpg);
+  background-position: center;
+  border-bottom: 2px solid #ddd;
+}
+.hero .container-fluid {
+  height: 450px;
+}
+.hero .container-fluid .row {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.hero .container-fluid .row .btn {
+  color: white;
+  background-color: #2c2c2c;
+  margin-top: 300px;
+}
+
+.section2 {
+  margin: 40px 20px 40px 20px;
+  width: 100%;
+  height: 320px;
+  background-color: black;
+  color: gainsboro;
+}
+.section2 div p {
+  margin-top: 20px;
+  line-height: 2.1;
+}
+.section2 .imagen-small {
+  display: block !important;
+  text-align: center;
+}
+.section2 .imagen-small img {
+  height: 330px;
+  margin-right: 20px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.section3 {
+  width: 100%;
+  height: 600px;
+  background-color: black;
+  color: gainsboro;
+  border-bottom: 3px solid white;
+  height: 570px !important;
+}
+.section3 h3 {
+  border-top: 1px solid #ddd;
+  background-color: #2c2c2c;
+  margin: 0%;
+  border-bottom: 1px solid #ddd;
+}
+.section3 .carousel-inner {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+/* ---------------------------- Nosotros ----------------------------  */
+.hero-nosotros {
+  display: flex;
+  width: 100%;
+  height: 550px;
+  background-image: url(../../img/nosotros.png);
+  background-position: center;
+  border-bottom: 2px solid #ddd;
+  align-items: flex-end;
+}
+.hero-nosotros .contenedor-titulo {
+  display: flex;
+  justify-content: end;
+}
+.hero-nosotros .contenedor-titulo h1 {
+  color: white;
+  font-size: 40px;
+  font-style: italic;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.section2-nosotros .container-fluid h5 {
+  font-style: italic;
+}
+.section2-nosotros .container-fluid p {
+  font-size: 20px;
+  color: gray;
+}
+.section2-nosotros .container-fluid ul li {
+  margin-top: 15px;
+  font-size: 20px;
+  color: gray;
+}
+
+/* ---------------------------- Menú ----------------------------  */
+.main-menu {
+  display: flex;
+  width: 100%;
+  background-position: center;
+  border-bottom: 2px solid #ddd;
+  justify-content: center;
+  align-items: center;
+}
+.main-menu .container-fluid {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 5%;
+  margin: 5%;
+  justify-content: center;
+  align-items: center;
+}
+.main-menu .container-fluid .row {
+  display: flex;
+  max-height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+.main-menu .container-fluid .row .card {
+  display: flex;
+  height: 410px;
+  position: static;
+  color: black;
+}
+.main-menu .container-fluid .row .card h4 {
+  color: black;
+}
+.main-menu .container-fluid .row .card h5 {
+  color: black;
+}
+.main-menu .container-fluid .row .card ul {
+  color: black;
+}
+
+/* ---------------------------- Contacto ----------------------------  */
+.main-contacto {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  border-bottom: 2px solid #ddd;
+  justify-content: center;
+  align-items: center;
+}
+.main-contacto h1 {
+  margin: 10%;
+  color: gray;
+}
+.main-contacto .container-fluid {
+  display: flex;
+  margin: 10%;
+  max-height: 100%;
+  width: 70%;
+  align-content: center;
+  margin-top: 10%;
+}
+.main-contacto .container-fluid .form-control {
+  margin-bottom: 5px;
+}
+
+/* ---------------------------- Reservas ----------------------------  */
+.main-reservas {
+  width: 100%;
+  height: 1000px;
+  background-position: center;
+  border-bottom: 2px solid #ddd;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+.main-reservas h1 {
+  text-align: center;
+  color: gray;
+}
+.main-reservas form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Dos columnas de igual tamaño */
+  grid-template-areas: "name email" "phone date" "time guests" "message message" "btn btn";
+  gap: 1.5rem;
+  /* Espaciado entre filas y columnas */
+  max-width: 800px;
+  margin: 0 auto;
+}
+.main-reservas #name {
+  grid-area: name;
+}
+.main-reservas #email {
+  grid-area: email;
+}
+.main-reservas #phone {
+  grid-area: phone;
+}
+.main-reservas #date {
+  grid-area: date;
+}
+.main-reservas #time {
+  grid-area: time;
+}
+.main-reservas #guests {
+  grid-area: guests;
+}
+.main-reservas .mensaje {
+  grid-area: message;
+  width: 100%;
+  grid-column: span 2;
+  /* Ocupa las dos columnas */
+}
+.main-reservas .mensaje #message {
+  width: 100%;
+}
+.main-reservas .btn {
+  grid-area: btn;
+  grid-column: span 2;
+}
+
+footer {
+  border: 2px solid #ddd;
+  background-color: darkgrey;
+  height: 100%;
+  width: 100%;
+}
+footer .logo-face {
+  display: flex;
+  justify-content: end;
+}
+footer img {
+  width: 30px;
+  height: 30px;
+}
+footer .whatsapp {
+  position: fixed;
+  text-align: end;
+  bottom: 10px;
+}
+footer .whatsapp img {
+  margin-right: 20px;
+  width: 60px;
+  height: 60px;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #2c2c2c;
+  }
+  .navbar-collapse .navbar-nav .nav-item {
+    margin: 5px;
+    padding: 5px 10px;
+  }
+  .navbar-collapse .navbar-nav .nav-item .nav-link {
+    font-size: 15px;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+  }
+  .form-control {
+    width: 60%;
+    font-size: 13px;
+    size: 5px;
+  }
+  .form-control .btn {
+    font-size: 13px;
+    size: 5px;
+  }
+  .section2 {
+    display: flex;
+    flex-direction: row;
+    width: 95% !important;
+    height: 420px !important;
+    background-color: black;
+    color: gainsboro;
+    justify-content: space-between;
+  }
+  .section2 .container-fluid {
+    height: 100%;
+    /* Adopta el 100% del alto de .section2 */
+    padding: 0;
+    /* Elimina cualquier relleno interno */
+    margin: 0;
+    /* Elimina márgenes externos */
+  }
+  .section2 .container-fluid .row {
+    height: 100%;
+    /* Adopta el 100% del alto de .container-fluid */
+    margin: 0;
+    /* Evita márgenes externos */
+  }
+  .section2 .container-fluid .row .contenedor-parrafo {
+    height: auto;
+    /* Ajusta el contenido automáticamente */
+    max-height: 100%;
+    /* Asegura que no exceda el alto del padre */
+    overflow: auto;
+    /* Permite scroll si hay contenido excesivo */
+  }
+  .section2 .container-fluid .row .contenedor-parrafo p {
+    height: auto;
+    /* Ajusta el contenido automáticamente */
+    max-height: 100%;
+    /* Asegura que no exceda el alto del padre */
+    margin-left: 0px;
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 2.1;
+    text-align: start;
+    height: auto;
+    /* Ajusta el contenido automáticamente */
+    max-height: 100%;
+    /* Asegura que no exceda el alto del padre */
+  }
+  .section2 .container-fluid .row .imagen-small {
+    height: auto;
+    /* Ajusta el contenido automáticamente */
+    max-height: 100%;
+    /* Asegura que no exceda el alto del padre */
+    overflow: auto;
+    /* Permite scroll si hay contenido excesivo */
+  }
+  .section2 .container-fluid .row .imagen-small img {
+    width: 250px;
+    height: 350px !important;
+    margin-top: 0px;
+    padding-right: 0px;
+    margin-right: 0px !important;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .section3 {
+    max-height: 420px !important;
+  }
+  .section3 .carousel-inner {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-height: 350px;
+    overflow: hidden;
+  }
+  .section3 .carousel-inner .carousel-img {
+    width: 100px;
+    height: 350px !important;
+    /* Ajusta la altura al 100% del contenedor */
+    object-fit: contain;
+    /* Esto mantiene la imagen sin corte */
+  }
+}
+@media screen and (max-width: 768px) {
+  #navbarSupportedContent {
+    flex-direction: column;
+  }
+  .navbar .container-fluid {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 20px;
+    object-fit: cover;
+    text-align: center;
+  }
+  .navbar .container-fluid .navbar-brand img {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 20px;
+    object-fit: contain;
+  }
+  .navbar-nav {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .navbar-nav .nav-item {
+    margin: 5px;
+    padding: 5px 10px;
+  }
+  .navbar-nav .nav-item .nav-link {
+    font-size: 15px;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+  }
+  form .form-control {
+    width: 60%;
+    font-size: 13px;
+    size: 5px;
+  }
+  form .btn {
+    font-size: 13px;
+    size: 5px;
+  }
+  .hero .container-fluid button {
+    font-size: 18px !important;
+  }
+  .section2 .container-fluid {
+    margin-right: 10px !important;
+  }
+  .section2 .container-fluid .row .div p {
+    height: auto;
+    font-size: 14px;
+    line-height: 2.5 !important;
+    text-align: start;
+  }
+  .section2 .container-fluid .row div .imagen-small {
+    display: flex;
+    text-align: center;
+  }
+  .section2 .container-fluid .row div .imagen-small img {
+    width: 180px;
+    height: 300px !important;
+    margin-top: 10px;
+    margin-left: 0px;
+    border-radius: 10px;
+  }
+  /*Carousel*/
+  .section3 {
+    max-height: 370px !important;
+  }
+  .carousel-inner {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-height: 310px;
+    overflow: hidden;
+  }
+  .main-contacto {
+    display: block;
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    border-bottom: 2px solid #ddd;
+    justify-content: center;
+    align-items: center;
+    padding: 90px;
+  }
+  .main-contacto h1 {
+    display: block;
+    margin: 30px;
+    padding-left: 100px;
+    justify-content: center;
+  }
+  .main-contacto .container-fluid {
+    display: block;
+    margin: 30px;
+    padding-left: 100px;
+    justify-content: center;
+  }
+  .main-contacto .container-fluid .form-control {
+    height: 100%;
+    width: 100%;
+  }
+  .main-contacto .container-fluid .btn {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .navbar {
+    height: auto !important;
+  }
+  /* Reducir espacio entre logo y el resto */
+  .navbar-brand {
+    margin-right: 0px;
+  }
+  .navbar-toggler {
+    width: 40px !important;
+    height: 40px !important;
+    padding: 1px !important;
+    /* Ajusta el tamaño del botón */
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .navbar-brand img {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  /* Contenedor principal del menú */
+  #navbarSupportedContent {
+    flex-direction: column;
+    /* Organizo elementos hijos en columna */
+    align-items: flex-start !important;
+    /* Alineo todo a la izquierda */
+    /* Lista de navegación */
+  }
+  #navbarSupportedContent .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    /* Coloco ítems en columna */
+    align-items: flex-start !important;
+    /* Alinep ítems a la izquierda */
+    padding-left: 0;
+    padding-right: 0%;
+    margin: 0;
+    width: 100%;
+    /* Elementos de la lista */
+  }
+  #navbarSupportedContent .navbar-nav .nav-item {
+    display: block;
+    /* Cada elemento ocupa una fila */
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    text-align: left;
+    /* Alineo el contenido a la izquierda */
+  }
+  #navbarSupportedContent .navbar-nav .nav-item .nav-link {
+    display: block;
+    font-size: 15px;
+    padding: 0px;
+    text-align: left;
+    color: white;
+    width: 100%;
+  }
+  /* buscador contenedor*/
+  .navbar-collapse form {
+    width: 100%;
+    border: 0px solid white;
+  }
+  .navbar-collapse form .form-control {
+    width: 44%;
+    font-size: 12px;
+  }
+  .navbar-collapse form .btn {
+    justify-content: end;
+    width: 20%;
+    margin-right: 10px;
+    font-size: 13px;
+    size: 2px;
+    padding: 0%;
+  }
+  main section .btn {
+    font-size: 15px !important;
+    color: white;
+    background-color: #2c2c2c;
+    margin-top: 300px;
+  }
+  main .section2 {
+    display: flex;
+    flex-direction: row;
+    height: 620px !important;
+    background-color: black;
+    color: gainsboro;
+    justify-content: space-between;
+    text-align: center;
+  }
+  main .section2 .container-fluid {
+    height: 100%;
+    /* mismo alto de .section2 */
+    padding: 0;
+    margin: 0;
+  }
+  main .section2 .container-fluid .row {
+    height: 100%;
+    /* mismo alto de .container-fluid */
+    margin: 0;
+  }
+  main .section2 .container-fluid .row .contenedor-parrafo {
+    height: auto;
+    /* Ajusta el contenido automáticamente */
+    max-height: 100%;
+    /* Asegura que no exceda el alto del padre */
+    align-content: center;
+  }
+  main .section2 .container-fluid .row .contenedor-parrafo h3 {
+    text-align: center;
+  }
+  main .section2 .container-fluid .row .contenedor-parrafo p {
+    height: auto;
+    /* Ajusta el contenido automáticamente */
+    max-height: 100%;
+    /* Asegura que no exceda el alto del padre */
+    margin-left: 0px;
+    font-size: 12px;
+    margin: 0px;
+    line-height: 2.1;
+    text-align: start;
+    height: auto;
+    /* Ajusta el contenido automáticamente */
+    max-height: 100%;
+    /* Asegura que no exceda el alto del padre */
+  }
+  main .section2 .container-fluid .row .imagen-small {
+    height: auto;
+    /* Ajusta el contenido automáticamente */
+    max-height: 100%;
+    /* Asegura que no exceda el alto del padre */
+    align-content: center;
+  }
+  main .section2 .container-fluid .row .imagen-small img {
+    width: 180px;
+    height: 300px !important;
+    margin-bottom: 0px;
+    padding-right: 0px;
+    margin-right: 0px !important;
+    border-radius: 10px;
+    object-fit: contain;
+  }
+  main .section3 {
+    max-height: 250px !important;
+    max-width: 99% !important;
+  }
+  main .section3 .carousel-inner {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-height: 180px !important;
+    overflow: hidden;
+  }
+  footer {
+    max-height: 100%;
+  }
+  footer .list-unstyled {
+    font-size: 10px;
+  }
+  footer .p-footer {
+    font-size: 10px !important;
+  }
+  footer .row .logo-face {
+    align-items: end;
+  }
+  footer img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  footer .whatsapp {
+    position: fixed;
+    text-align: end;
+    bottom: 10px;
+  }
+  footer .whatsapp img {
+    margin-right: 10px;
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .main-contacto {
+    display: block;
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    border-bottom: 2px solid #ddd;
+    justify-content: center;
+    align-items: center;
+    padding: 90px;
+  }
+  .main-contacto h1 {
+    padding: 0%;
+    margin-left: 12%;
+    width: 100%;
+    align-content: centers;
+  }
+  .main-contacto .container-fluid {
+    display: block;
+    padding: 0% !important;
+    margin-left: 12% !important;
+    justify-content: end;
+  }
+  .main-contacto .container-fluid .row {
+    width: 100%;
+    height: 100%;
+    justify-content: end !important;
+    justify-items: end;
+  }
+  .main-contacto .container-fluid .form-control {
+    height: 100%;
+    width: 100%;
+  }
+  .main-contacto .container-fluid .btn {
+    margin-top: 30px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

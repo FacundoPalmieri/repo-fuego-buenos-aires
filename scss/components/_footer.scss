@@ -1,0 +1,26 @@
+footer{
+    border: 2px solid #ddd;
+    background-color: darkgrey;
+    height: 100%;
+    width: 100%;
+    .logo-face{
+        display: flex;
+        justify-content: end;
+    }
+  
+    img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .whatsapp{
+        position: fixed;
+        text-align: end;
+        bottom: 10px;  
+        img{
+            margin-right: 20px;
+            width: 60px;
+            height: 60px;
+        }
+    }
+}

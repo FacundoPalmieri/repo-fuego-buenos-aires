@@ -93,7 +93,7 @@ footer .logo-face{
 footer .whatsapp{
     position: fixed;
     text-align: end;
-    bottom: 10px; /* Ajusta según lo que necesites */
+    bottom: 10px; 
 
 
 }
@@ -268,6 +268,7 @@ footer img{
     }
     
 
+
     /* Lista de navegación */
     .navbar-nav {
         width: 100%;
@@ -305,6 +306,10 @@ footer img{
         font-size: 13px; 
         size: 5px;    
     }
+
+
+
+
 
     .section2 .container-fluid{
         margin-right: 10px !important;
@@ -347,13 +352,7 @@ footer img{
         overflow: hidden;
     }
 
-    main .section3 .carousel-img {
-        width: 100px;
-        height: 300px !important; /* Ajusta la altura al 100% del contenedor */
-        object-fit: contain;  /* Esto mantiene la imagen sin corte */
-    }
-
-        
+ 
 
 
 }
@@ -372,7 +371,7 @@ footer img{
         height: 40px !important;
         padding: 1px !important; /* Ajusta el tamaño del botón */
         margin-right: 5%; 
-        margin-left: 5%;/* Asegúrate de que no haya margen izquierdo */
+        margin-left: 5%;
 
     }
 
@@ -668,11 +667,6 @@ main .section3 .carousel {
     overflow: hidden;
 }
 
-main .section3 .carousel-img {
-    width: 100%;
-    height: 500px !important;  
-    object-fit: cover;  
-}
 
 
 
@@ -700,6 +694,8 @@ main .hero-nosotros h1{
     margin-right: 20px;
     margin-top: 20px;
 }
+
+
 
 main .section2-nosotros h5{
     font-style: italic;

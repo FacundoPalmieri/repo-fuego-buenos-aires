@@ -1,0 +1,14 @@
+{
+  "name": "fuego-buenos-aires",
+  "version": "1.0.0",
+  "description": "**Facundo Palmieri**  \r Proyecto personal de página web para **CODERHOUSE** correspondiente al curso **74945 - Desarrollo Web Flex**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fuego-buenos-aires": "file:"
+  }
+}
