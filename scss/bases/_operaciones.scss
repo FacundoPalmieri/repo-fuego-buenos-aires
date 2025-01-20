@@ -1,0 +1,76 @@
+//Variables
+$navbar-fondo: (135deg, rgba(34,33,33,1) 66%, rgba(179,113,113,1) 100%, rgba(205,193,14,1) 100%);
+//(90deg, rgba(44,44,44,1) 66%, rgba(253,29,29,1) 96%, rgba(252,176,69,1) 99%);
+$footer-fondo: darkgrey;
+
+
+
+//Mixin
+@mixin btn-outline($fondo) {
+    background-color: $fondo;
+    color: white;
+    border: 3px solid white;
+    margin-right: 20px;
+    transition: 1s;
+
+    &:hover {
+        background-color: white;
+        color: $fondo;
+        border: 3px solid $fondo;
+    }
+
+    &:active {
+        color: white;
+        border: 3px solid $fondo;
+    }
+}
+
+@mixin border-bottom($pixeles) {
+    border-bottom: $pixeles solid white;
+}
+
+
+
+@mixin form-control($fondo) {
+    border: 3px solid white;
+    &:hover {
+        background-color: white;
+        color: $fondo;
+        border: 3px solid $fondo;
+    }
+
+    &:active{
+        color: white;
+        border: 3px solid$fondo;
+  
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: none; 
+        border: 3px solid $fondo;
+        color: $fondo;
+    }
+}
+
+
+
+
+//Extend
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%button-styles {
+    background: linear-gradient($navbar-fondo);
+    color: white;
+    border: 3px solid white;
+
+    &:hover {
+        color: rgb(179, 113, 113);
+        border: 3px solid rgb(179, 113, 113);
+        // color: #d1cbc0; (comentario opcional)
+    }
+}
