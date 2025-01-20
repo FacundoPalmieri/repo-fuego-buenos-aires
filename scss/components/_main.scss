@@ -9,8 +9,8 @@
     height: 550px;
     background-image: url(../../img/hero.jpg);
     background-position: center;
-    background-size: cover; 
-    background-repeat: no-repeat; 
+    background-size: cover;
+    background-repeat: no-repeat;
     @include op.border-bottom(2px);
 
     .container-fluid {
@@ -19,7 +19,7 @@
         .row {
             @extend %flex-center;
             height: 100%;
-            
+
             /* Botón Reservar*/
             .btn {
                 @extend %button-styles;
@@ -32,7 +32,7 @@
 
 .section2 {
     margin: 40px 20px 40px 20px;
-    width: 100%;
+    width: 98%;
     height: 320px;
     background-color: black;
     color: gainsboro;
@@ -68,7 +68,7 @@
 
     h3 {
         border-top: 1px solid #ddd;
-        background:linear-gradient(op.$navbar-fondo);
+        background: linear-gradient(op.$navbar-fondo);
         margin: 0%;
         @include op.border-bottom(1px);
     }
@@ -117,6 +117,7 @@
 
 .section2-nosotros {
     margin-bottom: 5%;
+
     .container-fluid {
         h5 {
             font-style: italic;
@@ -147,50 +148,52 @@
     width: 100%;
     background-position: center;
     @include op.border-bottom(2px);
-   
+
     .container-fluid {
         @extend %flex-center;
         height: 100%;
         width: 100%;
         padding: 5%;
         margin: 5%;
-   
+
         .row {
             display: flex;
             max-height: 100%;
             width: 100%;
             align-items: center;
             justify-content: space-between;
-            margin-top: 1%;
+
 
             .card {
                 display: flex;
                 height: 520px;
                 position: static;
                 color: white;
-                background:linear-gradient(op.$navbar-fondo);
+                background: linear-gradient(op.$navbar-fondo);
                 border-radius: 10px;
 
                 .card-title {
                     color: white;
                     font-style: italic;
-                   
+
                 }
-                h5{
-                    color: white; 
-                }
-                p{
+
+                h5 {
                     color: white;
-                   
-                    
+                }
+
+                p {
+                    color: white;
+
+
                 }
 
                 ul {
                     color: white;
                 }
-              
 
-                
+
+
 
             }
         }
@@ -204,7 +207,7 @@
 .main-contacto {
     @extend %flex-center;
     width: 100%;
-    height: 500px;
+    height: 790px;
     background-position: center;
     @include op.border-bottom(2px);
 
@@ -215,20 +218,22 @@
     }
 
     .container-fluid {
-       @extend %flex-center;
+        @extend %flex-center;
         margin: 10%;
         max-height: 100%;
         width: 70%;
-      
+
         margin-top: 10%;
 
         .form-label {
             color: gray;
         }
+
         .form-control {
             margin-bottom: 5px;
         }
-        .btn{
+
+        .btn {
             @extend %button-styles;
         }
 
@@ -241,7 +246,7 @@
 
 .main-reservas {
     width: 100%;
-    height: 1000px;
+    height: 790px;
     background-position: center;
     @include op.border-bottom(2px);
     justify-content: center;
@@ -268,11 +273,11 @@
         max-width: 800px;
         margin: 0 auto;
 
-        .form-label{
+        .form-label {
             color: gray;
         }
 
-        .btn{
+        .btn {
             @extend %button-styles
         }
     }
