@@ -630,13 +630,36 @@
                 margin: 0px;
                 justify-content: end !important;
                 justify-items: end;
+
+                .container-contacto-nombre {
+                    display: block;
+                    height: auto;
+                    margin: 0px;
+                    padding: 0px;
+                
+                    border: 2px solid red;
+                }
+                .container-contacto-email {
+                    display: block;
+                    height: auto;
+                    margin: 0px;
+                    padding: 0px;
+                
+                    border: 2px solid red;
+                }
+
+                .mb-3 {
+                    padding: 0%;
+                }
             }
 
             .form-control {
+                display: block;
+                height: auto;
                 width: 100%;
-                margin: 0px;
-                padding: 0px;
                 height: 50%;
+                margin: 0px;
+          
             }
 
             .btn-container-contacto {
